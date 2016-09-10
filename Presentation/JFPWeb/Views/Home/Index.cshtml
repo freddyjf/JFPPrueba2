@@ -1,0 +1,44 @@
+﻿
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="ContainerNews">
+    <div id="progressNews" class="progress" style="display:none">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+            <span class="sr-only">45% Complete</span>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    function ShowNews(id)
+    {
+        $("#news_" + id).show(200);
+    }
+
+
+    function LoadData()
+    {
+        $("#progressNews").show();
+        
+        $.ajax({
+            url: "/Home/getData"
+        })
+        .done(function( data ) {
+            $("#ContainerNews").html(data);
+
+        });
+        
+        
+       
+    }
+
+
+
+
+</script>

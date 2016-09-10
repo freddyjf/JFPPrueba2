@@ -1,0 +1,96 @@
+﻿.GridColor {
+    stroke: rgb(118, 118, 118);
+}
+
+.GridLine {
+    stroke-width: 1;
+}
+
+.GridDottedLine {
+    stroke-dasharray: 3,2;
+}
+
+.BubblePercentText {
+    font-family: Arial;
+    font-size: 12px;
+    fill: rgb(118, 118, 118);
+}
+
+
+.GridText {
+    font-family: Arial;
+    font-size: 10px;
+    fill: rgb(118, 118, 118);
+}
+
+.GridTextBig {
+    font-family: Arial;
+    font-size: 17px;
+    fill: rgb(118, 118, 118);
+}
+
+.TextAlignRight {
+    text-anchor: end;
+}
+
+.TextAlignCenter {
+    text-anchor: middle;
+}
+
+.TextLinkAlike {
+    fill: #00f !important;
+}
+
+.TextBold {
+    font-weight: bold;
+}
+
+.GridTextBox {
+    fill: rgb(255,255,255);
+}
+
+.StatementCircle {
+    stroke-width: 2;
+    stroke: green;
+    fill: white;
+}
+
+.StatementReiterada {
+    stroke: #009900;
+}
+
+.StatementAmpliada {
+    stroke: #b3e515;
+}
+
+.StatementApartada {
+    stroke: #4227ff;
+}
+
+.StatementReducida {
+    stroke: #ffae07;
+}
+
+.StatementRevocada {
+    stroke: #ff0000;
+}
+
+.StatementBackReiterada {
+    fill: #ccebcc;
+}
+
+.StatementBackAmpliada {
+    fill: #f0fad0;
+}
+
+.StatementBackApartada {
+    fill: #DDD6FF;
+}
+
+.StatementBackReducida {
+    fill: #ffefcd;
+}
+
+.StatementBackRevocada {
+    fill: #ffcccc;
+}

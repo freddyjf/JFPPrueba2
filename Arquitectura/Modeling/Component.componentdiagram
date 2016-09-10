@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="df186a62-d812-46eb-8156-22b02fbf1678" name="Component" linkedPackageId="cf8400c8-16d5-4b63-8a7b-26b8ac107bf2" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="e56b5524-4923-4c70-ace3-8b7190ba4721" name="Bussines Services" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a2e8cef3-e559-4778-ae22-2fd0ea083ef3" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="b1616937-c8b0-42e1-b71c-20f221542dde" name="DataAcces" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4cd166bc-49dc-4c0b-a4d7-98986bf54c1d" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="9fcf1484-31d5-49a4-b816-5f98afb517a9" name="Domain" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bd95ae92-dd9c-4b0d-9b93-a1de112238cd" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="572a021a-7f4f-465b-8e45-6e74bab31556" name="Component1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d57318c5-d665-40ce-a6c8-c3967c321744" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="cf8400c8-16d5-4b63-8a7b-26b8ac107bf2" name="Modeling">
+    <elementDefinition Id="1bc6eba6-c782-47bf-b7d6-69ab8cec184e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="4a073fa4-d105-437d-b118-bc4d04e25f4d">
+        <profileInstance Id="dfc3bcb6-22a5-4c10-9fa3-738fd054277a" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="075ac646-23ca-4d2e-a098-12ac0456be6b">
+        <profileInstance Id="e94301da-c8ba-4347-9521-f534ca683114" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</componentModel>

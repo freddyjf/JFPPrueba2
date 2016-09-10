@@ -1,0 +1,63 @@
+2016-02-15 14:01:04,237 [7] ERROR Precedente - user: NOT AVAILABLE -token: NOT AVAILABLE  -RegistroLogos
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR, String Configuracion)
+   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR)
+   en LEGIS.UID.LOGOS.Registro..ctor(String URLWebService, String APP, String SERVIDOR)
+   en LEGIS.PJ.Core.Statistics.StatisticsManager.get_Registro() en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 257
+   en LEGIS.PJ.Core.Statistics.StatisticsManager.RegistroLogos(EstadisticasUsos uso, Hashtable& campos) en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 117
+2016-02-15 14:01:28,033 [6] ERROR Precedente - user: NOT AVAILABLE -token: NOT AVAILABLE  -RegistroLogos
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR, String Configuracion)
+   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR)
+   en LEGIS.UID.LOGOS.Registro..ctor(String URLWebService, String APP, String SERVIDOR)
+   en LEGIS.PJ.Core.Statistics.StatisticsManager.get_Registro() en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 257
+   en LEGIS.PJ.Core.Statistics.StatisticsManager.RegistroLogos(EstadisticasUsos uso, Hashtable& campos) en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 117
+2016-02-15 14:01:29,027 [7] ERROR Precedente - user: NOT AVAILABLE -token: NOT AVAILABLE  -RegistroLogos
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR, String Configuracion)
+   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR)
+   en LEGIS.UID.LOGOS.Registro..ctor(String URLWebService, String APP, String SERVIDOR)
+   en LEGIS.PJ.Core.Statistics.StatisticsManager.get_Registro() en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 257
+   en LEGIS.PJ.Core.Statistics.StatisticsManager.RegistroLogos(EstadisticasUsos uso, Hashtable& campos) en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 117
+2016-02-15 14:01:30,002 [6] ERROR Precedente - user: NOT AVAILABLE -token: NOT AVAILABLE  -RegistroLogos
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR, String Configuracion)
+   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR)
+   en LEGIS.UID.LOGOS.Registro..ctor(String URLWebService, String APP, String SERVIDOR)
+   en LEGIS.PJ.Core.Statistics.StatisticsManager.get_Registro() en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 257
+   en LEGIS.PJ.Core.Statistics.StatisticsManager.RegistroLogos(EstadisticasUsos uso, Hashtable& campos) en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 117
+2016-02-15 14:01:30,822 [6] ERROR Precedente - user: NOT AVAILABLE -token: NOT AVAILABLE  -RegistroLogos
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR, String Configuracion)
+   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR)
+   en LEGIS.UID.LOGOS.Registro..ctor(String URLWebService, String APP, String SERVIDOR)
+   en LEGIS.PJ.Core.Statistics.StatisticsManager.get_Registro() en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 257
+   en LEGIS.PJ.Core.Statistics.StatisticsManager.RegistroLogos(EstadisticasUsos uso, Hashtable& campos) en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 117
+2016-02-15 14:01:31,271 [6] ERROR Precedente - user: NOT AVAILABLE -token: NOT AVAILABLE  -RegistroLogos
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR, String Configuracion)
+   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR)
+   en LEGIS.UID.LOGOS.Registro..ctor(String URLWebService, String APP, String SERVIDOR)
+   en LEGIS.PJ.Core.Statistics.StatisticsManager.get_Registro() en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 257
+   en LEGIS.PJ.Core.Statistics.StatisticsManager.RegistroLogos(EstadisticasUsos uso, Hashtable& campos) en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 117
+2016-02-15 14:01:32,069 [7] ERROR Precedente - user: NOT AVAILABLE -token: NOT AVAILABLE  -RegistroLogos
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR, String Configuracion)
+   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR)
+   en LEGIS.UID.LOGOS.Registro..ctor(String URLWebService, String APP, String SERVIDOR)
+   en LEGIS.PJ.Core.Statistics.StatisticsManager.get_Registro() en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 257
+   en LEGIS.PJ.Core.Statistics.StatisticsManager.RegistroLogos(EstadisticasUsos uso, Hashtable& campos) en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 117
+2016-02-15 14:01:33,049 [6] ERROR Precedente - user: NOT AVAILABLE -token: NOT AVAILABLE  -RegistroLogos
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR, String Configuracion)
+   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR)
+   en LEGIS.UID.LOGOS.Registro..ctor(String URLWebService, String APP, String SERVIDOR)
+   en LEGIS.PJ.Core.Statistics.StatisticsManager.get_Registro() en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 257
+   en LEGIS.PJ.Core.Statistics.StatisticsManager.RegistroLogos(EstadisticasUsos uso, Hashtable& campos) en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 117
+2016-02-15 14:01:33,861 [7] ERROR Precedente - user: NOT AVAILABLE -token: NOT AVAILABLE  -RegistroLogos
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR, String Configuracion)
+   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR)
+   en LEGIS.UID.LOGOS.Registro..ctor(String URLWebService, String APP, String SERVIDOR)
+   en LEGIS.PJ.Core.Statistics.StatisticsManager.get_Registro() en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 257
+   en LEGIS.PJ.Core.Statistics.StatisticsManager.RegistroLogos(EstadisticasUsos uso, Hashtable& campos) en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 117

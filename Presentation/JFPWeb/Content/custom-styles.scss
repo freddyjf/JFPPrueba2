@@ -1,0 +1,590 @@
+﻿@import 'tabdrop';
+@import 'chosen';
+@import '_basic-styles';
+@import 'personal-icons';
+@import 'blueimp/Gallery/blueimp-gallery';
+@import 'blueimp/Gallery/blueimp-gallery-indicator';
+@import 'blueimp/Gallery/blueimp-gallery-video';
+
+[ng-cloak], [data-ng-cloak],
+[x-ng-cloak], .ng-cloak,
+.x-ng-cloak, .ng-hide:not(.ng-hide-animate) {
+    display: none !important;
+}
+
+.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+    margin: 7px 0;
+}
+
+.busquedaContainer .form-group input ~ i {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-size: 2.4em;
+    color: #dddddd;
+}
+
+.agregaFavorito {
+    z-index: 1000;
+}
+
+/* Colores para los componentes de los formularios cuando son validos o no. */
+form.ng-submitted .ng-invalid, form .ng-invalid.ng-dirty {
+    border: solid #e91e63 1px;
+}
+
+.favoritos-container .ng-invalid:not(.clean) {
+    border: solid #e91e63 1px !important;
+}
+
+form .ng-valid.ng-dirty, form .ng-valid {
+    border: solid #028a8a 1px;
+}
+
+.pcd-pagination {
+    li.pagination-first a,
+    li.pagination-prev a,
+    li.pagination-next a,
+    li.pagination-last a {
+        background-color: transparent !important;
+    }
+}
+
+.resultado-tesis {
+    text-align: justify;
+}
+
+.resultado-detalles {
+    padding-bottom: 10px;
+}
+
+.search-submit {
+    cursor: pointer;
+}
+
+.typeahead.dropdown-menu {
+    width: 100%;
+}
+
+/* Hove para "ordenar por" en los resultados de búsqueda. */
+.con-submenu:hover + div, div.submenu:hover {
+    display: block !important;
+}
+
+ul.filtros-busqueda {
+    ul {
+        list-style-type: none;
+    }
+
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.resultados-container {
+    input[type=checkbox]:checked + label {
+        font-weight: 600;
+    }
+
+    input[type=radio]:checked + label {
+        font-weight: 600;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    label:first-letter {
+        text-transform: uppercase;
+    }
+}
+
+.datepicker-container {
+    font-size: 12px;
+}
+
+.resultados-container .chosen-choices input {
+    width: 195px !important;
+}
+
+.cerrar-ficha {
+    cursor: pointer;
+    float: right;
+    font-size: 18px;
+    padding-left: 5px;
+    position: absolute;
+    right: 5px;
+    top: -3px;
+
+    &:hover {
+        color: red;
+    }
+}
+
+li.fichas_tabs:hover .cerrar-ficha {
+    visibility: visible !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.container.fichaDtContainer {
+    overflow: hidden;
+}
+
+/*Estilos para formateo defs impresión symbol PDF*/
+
+.PrintPageBefore {
+    page-break-before: always;
+}
+
+.PrintNoMargins {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.PrintNoBorders {
+    border: none !important;
+}
+
+.PrintBackground {
+    background-color: transparent !important;
+}
+
+.ppv {
+    display: block;
+    margin-top: -10px;
+    width: 10%;
+}
+
+.marcoSentencia .consideraciones.active {
+    background-color: beige;
+}
+
+.stuck {
+    position: fixed;
+    top: 5px;
+    background-color: white;
+    z-index: 2;
+}
+
+.blast {
+    color: yellow;
+    font-weight: bold;
+    background-color: black;
+}
+
+.mis-resaltados {
+    p, a {
+        cursor: pointer;
+    }
+}
+
+.btn-precedente:focus {
+    color: white !important;
+}
+
+.modal-grafico-small {
+    width: 25% !important;
+}
+
+.modal-alert {
+    width: 40% !important;
+    top: 250px;
+    left: 200px;
+}
+
+
+.field-validation-error {
+    color: red !important;
+}
+
+a.muestra-hover:hover i, .row.favs .lista-listado-carpetas li a.muestra-hover:hover i {
+    color: #2096f2;
+}
+
+.detalle-un-favorito:hover {
+    margin-right: 0 !important;
+}
+
+.favoritos-edit-mode {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.carpetas-edit-mode {
+    width: 65%;
+    display: inline;
+}
+
+.ul-modulacion-masinfo {
+    width: 300px !important;
+    padding: 10px;
+
+    span {
+        margin-right: 10px;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+}
+
+.initial {
+    display: initial;
+}
+
+.inicioTabs {
+    padding-bottom: 30px;
+}
+
+.busquedas {
+    padding-bottom: 105px;
+}
+
+.modulacion-toogle {
+    cursor: pointer;
+
+    & > ul {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}
+
+.uib-daypicker {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.dropdown-menu {
+    width: 100%;
+}
+
+.contenidoInicioContainer {
+    padding-bottom: 35px;
+}
+
+.fichaTabs .nav-tabs {
+    > li:not(.active) a {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 6px 15px;
+        padding-left: 44px;
+    }
+
+    > li > a {
+        white-space: nowrap;
+        min-height: 60px;
+    }
+}
+
+.seccion-select-documento {
+    max-width: 150px;
+}
+
+.tabs-analisis > .tabdrop {
+    left: 2px;
+
+    & > a.dropdown-toggle:hover {
+        cursor: pointer;
+    }
+
+    & > .dropdown-menu {
+        width: 245px;
+
+        li:not(.active) > a {
+            background: #eeeeee;
+            color: #bbbbbb;
+            font-size: 16px;
+            border: 1px solid #dddddd;
+        }
+
+
+        li.active > a {
+            background: #fff;
+            color: #333;
+            font-size: 16px;
+            border-top: 4px solid #03b3b2;
+        }
+
+        li.fichas_tabs {
+            position: relative;
+        }
+
+        a {
+            margin: 0 3px;
+        }
+    }
+}
+
+.fichaTabs .tab-content .cuerpoAnalisis .normaFuente span.legisnet {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: darkcyan;
+}
+
+.abrir-articulo {
+    cursor: default;
+    margin-bottom: 5px;
+    min-width: 80px;
+    padding: 5px;
+}
+
+
+.fichaTabs .tab-content .navbar-fichaTop .navbar-nav > li .form-group a {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#MisResaltados {
+    overflow-y: auto;
+    max-height: 370px;
+
+    > li {
+        padding: 7px;
+
+        &:hover {
+            background-color: #03b3b2;
+            color: white;
+        }
+    }
+}
+
+#frmContacto .control-label {
+    text-align: left !important;
+}
+
+.marginleft10 {
+    margin-left: 10px !important;
+}
+
+.ordenar-busquedas-drop {
+    width: 200px !important;
+}
+
+#contactenos_home {
+    padding-bottom: 50px;
+}
+
+.detalle-grafico-burbuja {
+    font-size: 14px;
+    padding-right: 5px;
+    padding-top: 15px;
+    padding-left: 0 !important;
+    max-height: 445px;
+    overflow-y: auto;
+    margin-right: 10px;
+}
+
+.filtros-temas-patrones {
+    z-index: 1;
+}
+
+.titulo-terminos {
+    font-size: 14px;
+}
+
+.select-document-ip {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    opacity: 0.7;
+}
+
+.font-size-textos2-loginip {
+    font-size: 15px;
+}
+
+.year-search {
+    margin-bottom: 5px;
+}
+
+.fichaTabs .tab-content .navbar-fichaTop .navbar-nav {
+    display: flex;
+
+    .dropdown-menu.buscar-en {
+        width: 179%;
+    }
+
+    > li .form-group {
+        padding: 0 8px;
+    }
+}
+
+@media (max-width: 767px) {
+    .fichaTabs .tab-content .navbar-fichaTop {
+        display: block !important;
+    }
+}
+
+.grafico {
+    padding-left: 15px !important;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        height: 10px;
+    }
+}
+
+div.tratamiento-graph {
+    cursor: pointer;
+}
+
+/* Gráfico de Línea Jurisprudencial */
+
+div.graphlj-title {
+    text-align: center;
+}
+
+div.graphlj-title h3 {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+div.graphlj-popupsentencia {
+    position: absolute;
+    display: none;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid gray;
+    text-align: center;
+    z-index: 100;
+}
+
+div.graphlj-popupsentencia > p:first-of-type {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+div.graphlj-popupsentencia hr {
+    margin: 0;
+    margin-bottom: 0;
+    border: 1px solid lightgray;
+}
+
+div.graphlj-popupsentencia > div p {
+    margin: 0;
+    font-weight: normal;
+}
+
+div.graphlj-popupsentencia ul {
+    text-align: left;
+    margin-left: -40px;
+    margin-top: 5px;
+    font-size: 13px;
+    list-style-type: none;
+}
+
+svg.graphlj-svgbusqueda path {
+    fill: rgb(255,0,0);
+}
+
+svg.graphlj-svgestaaqui path {
+    fill: rgb(255, 238, 0);
+    stroke: gray;
+}
+
+svg.graphlj-svgestaaqui text {
+    font-size: 16.4px;
+    font-family: sans-serif;
+}
+
+div.graphlj-divgraph {
+    overflow-x: auto;
+}
+
+div.graphlj-divgraph > svg:first-of-type {
+    margin-bottom: 5px;
+}
+
+.grafico-burbuja-container {
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        height: 10px;
+    }
+}
+
+$circle_selected: #d9534f;
+$text_selected: white;
+
+.bubble_decorator {
+    cursor: pointer;
+}
+
+circle.bubble_decorator {
+    &:hover {
+        fill: $circle_selected;
+    }
+
+    &:hover + text {
+        fill: $text_selected;
+    }
+}
+
+.elimina-resaltado {
+    float: right;
+    margin-top: -3px;
+}
+
+
+.width-auto {
+    width: auto;
+}
+
+.blueimp-gallery > .description {
+    position: absolute;
+    left: 15px;
+    color: #fff;
+    display: none;
+    bottom: 5px;
+    width: 90%;
+    text-align: center;
+}
+
+.blueimp-gallery-controls > .description {
+    display: block;
+}
+
+.modulacion {
+    .ul-modulacion-masinfo {
+        margin-left: -188px;
+        font-weight: normal;
+        color: #555555;
+        line-height: 1.42857143;
+    }
+}
+
+.btn-analisis-extra-1 {
+    width: 100%;
+}
+
+.busca-analisis {
+    padding-right: 32px;
+}
+
+@media(max-width: 959px) {
+    .busca-analisis {
+        padding-right: 50px;
+    }
+}
+
+.notificaciones-opciones-container{
+    padding-bottom: 32px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.no-notificaciones-principal{
+    margin-bottom: 50px;
+}

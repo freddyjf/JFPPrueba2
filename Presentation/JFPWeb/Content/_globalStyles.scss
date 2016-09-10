@@ -1,0 +1,331 @@
+@import 'variables';
+body {
+   font-family: $fuenteBase;
+   font-size: $baseFontSize;
+   background: $accentBg;
+   color: $baseText;
+   
+}
+
+a {
+   outline: none!important;
+   color: $linksFg;
+   //   font-size: 14px;
+   &.principal {
+      background: $color3;
+      color: #fff;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+      padding: 5px 15px;
+      cursor: pointer;
+      font-size: 14px;
+      &:hover,
+      &:active,
+      &:visited,
+      &:link {
+         color: #fff;
+         text-decoration: none;
+      }
+   }
+   &:hover,
+   &:active,
+   &:visited,
+   &:link {
+      color: $linksFg;
+      outline: none;
+      text-decoration: none;
+   }
+   &:hover {
+      text-decoration: underline;
+   }
+}
+
+//Fuentes
+//size
+h1 {
+   font-size: 2.4em;
+}
+
+h2 {
+   font-size: 2em;
+}
+
+h3 {
+   font-size: 1.8em;
+}
+
+h4 {
+   font-size: 1.7em;
+}
+
+h5 {
+   font-size: 1.6em;
+}
+
+h6 {
+   font-size: 1.5em;
+}
+
+p {
+   font-size: 1.4em;
+}
+
+//Pesos
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: 400;
+}
+
+.light {
+   font-weight: 300;
+}
+
+.medium {
+   font-weight: 500;
+}
+
+.semiBold {
+   font-weight: 600;
+}
+
+.bold {
+   font-weight: 700;
+}
+
+// Colores
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   color: $baseText;
+}
+
+.colorLight {
+   color: $color4;
+}
+
+.colorDark {
+   color: $color0;
+}
+
+section {
+   &::before {
+      display: table;
+      content: ' ';
+   }
+}
+
+button {
+   &.principal {
+      background: $color3;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+      padding: 5px 15px;
+      font-size: 14px;
+      font-family: $fuenteBase;
+      color: #fff;
+   }
+}
+
+.largeBtn {
+   padding: 10px 20px;
+   font-size: 20px
+}
+
+.btn-precedente {
+   @extend button.principal;
+   &:hover,
+   &:active,
+   &:visited,
+   &:link {
+      color: #fff;
+   }
+}
+
+//jTip plugin para hacer tooltips
+//http://vanity.enavu.com/documentation/
+.tip_window {
+   font-size: 14px;
+   padding: 5px;
+   max-width: 300px;
+   background-color: rgba(0, 0, 0, 0.8);
+   color: #fff;
+   text-align: center;
+   border-radius: 0 3px 3px;
+   box-shadow: 1px 1px 3px #6e6d6e;
+}
+
+.antimargin {
+   margin: 0 15px;
+}
+
+.center-block {
+   display: flex;
+   justify-content: center;
+}
+
+.center-around {
+   display: flex;
+   justify-content: space-around;
+}
+
+.center-between {
+   display: flex;
+   justify-content: space-between;
+}
+
+.main-footer {
+   //   color: $borders;
+   text-align: center;
+   margin: 200px auto 20px;
+   color: $baseText;
+   @media (max-width: 960px) {
+      margin-top: 50px;
+   }
+   hr {
+      border-color: $borders;
+      margin: 10px auto 5px;
+   }
+   p {
+      margin: 0;
+   }
+   .enlacesFooter {
+      padding: 0;
+      margin: 0;
+      li {
+         display: inline-block;
+         @media(max-width: 768px)and (min-width: 320px) {
+            display: block;
+            padding: 15px 0 0;
+         }
+         a {
+            padding: 5px 15px;
+            color: $baseText;
+            font-size: 14px;
+         }
+      }
+   }
+}
+
+.modal {
+   .modal-dialog {
+      @media (min-width: 768px) {
+         width: 80%;
+         max-width: 900px;
+      }
+   }
+   .modal-content {
+      overflow: hidden;
+   }
+   .modal-header {
+      background: $color6;
+      padding: 10px 15px;
+   }
+   .modal-title {
+      font-size: 16px;
+      font-weight: 600;
+   }
+   .modal-body {
+      margin: 10px 10px 20px 0;
+      max-height: 450px;
+      overflow-y: scroll;
+      font-family: $fuenteTextos;
+      form {
+         font-family: $fuenteBase;
+         font-size: 15px;
+         label {
+            font-weight: 300;
+         }
+      }
+      strong {
+         color: #2c3d43;
+      }
+      h4 {
+         font-size: 15px;
+         font-weight: 600;
+         margin: 30px 0 20px;
+         color: #212121;
+      }
+   }
+   .notaAdicionado {
+      background: $color6;
+      border: 1px solid $borders;
+      border-radius: 3px;
+      height: 40px;
+      margin-bottom: 15px;
+      padding: 0 10px;
+      p {
+         line-height: 40px;
+         font-family: $fuenteBase;
+         font-size: 15px;
+      }
+      .adicionado {
+         background: $alertFg;
+         padding: 7px;
+         width: 11px;
+         height: 11px;
+         border-radius: 50%;
+         display: inline-block;
+         margin-right: 10px;
+      }
+   }
+}
+
+.modal.noscroll {
+   font-size: 14px;
+   font-family: $fuenteBase;
+   .modal-body {
+      overflow: auto;
+      font-family: $fuenteBase;
+      height: 100%;
+   }
+   .modal-dialog.modal-sm {
+      min-width: 280px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   .modal-footer {
+      text-align: left;
+      border: 0;
+      a {
+         margin-right: 15px;
+         &:last-of-type {
+            margin: 0;
+         }
+      }
+   }
+}
+
+.flexWell {
+   font-size: 10px;
+   display: flex;
+   justify-content: space-between;
+   h2 {
+      margin: 10px 0;
+   }
+   p {
+      font-size: 1.4em;
+   }
+   .right {
+      text-align: center;
+   }
+}
+
+.newsRow{
+
+    padding: 12px;
+    margin-bottom: 9px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+

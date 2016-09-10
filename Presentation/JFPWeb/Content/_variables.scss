@@ -1,0 +1,85 @@
+//Fuentes
+@import url(https://fonts.googleapis.com/css?family=Hind+Vadodara:400,300,500,600,700|Noticia+Text:400,400italic);
+
+$fuenteBase: 'Hind Vadodara', sans-serif;
+$fuenteTextos: 'Noticia Text', serif;
+$baseFontSize:100%; 
+ 
+
+/*
+Colores
+*/
+
+//Paleta principal: 
+$color0:#013a3a;
+$color1:#02807f;
+$color2:#028a8a;
+$color3:#03b3b2;
+$color4:#d9dfdf;
+$color5:#f2f7f7;
+$color6:#f9fbfb;
+$color7:#029d9d;
+$color8:#f9f3ca;
+$color9:#efe07a;
+
+//Paleta de Controles
+$borders:#dddddd;
+$disabledBg:#eeeeee;
+$disabledFg:#bbbbbb;
+$selectedHighlight: $color3;
+$activeBg:#ffffff;
+
+//Acentos
+$accentBg:#fdfbee;
+$accentFg:#f9d60d;
+
+//Enlaces y Alertas
+$linksFg:#2096f2;
+$alertFg:#e91e63;
+
+//Textos
+$baseText : #555555;
+$darkerText : #333333;
+$lighterText : #878787;
+
+// Colores de la modulacion
+$reitera:   #00A600;
+$amplia:    #99E600;
+$aparta:   #4227FF;
+$reduce:    #FDB000;
+$revoca:    #ff0000;
+
+
+/// Mixin to customize scrollbars
+/// Beware, this does not work in all browsers
+/// @author Hugo Giraudel
+/// @param {Length} $size - Horizontal scrollbar's height and vertical scrollbar's width
+/// @param {Color} $foreground-color - Scrollbar's color
+/// @param {Color} $background-color [mix($foreground-color, white, 50%)] - Scrollbar's color
+/// @example scss - Scrollbar styling
+///   @include scrollbars(.5em, slategray);
+
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  // For Google Chrome
+  ::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+      border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-track {
+      background: $background-color;
+      border-radius: 2px;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}

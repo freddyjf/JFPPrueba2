@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html lang="es" data-ng-app="precedente">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="fragment" content="!">
+
+    @*Google Indexer*@
+    <meta name="description" content="@Session["MetaDescription"]" />
+    <meta name="keywords" content="@Session["MetaKeywords"]" />
+    <meta itemprop="inLanguage" content="es-ES" />
+    <meta property="og:locale:alternate" content="es_CO" />
+    <meta property="og:locale" content="es_CO" />
+    <meta name="geo.position" content="4.676363,-74.116021" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://analitica.legis.com.co/" />
+    <meta property="og:image" content="http://analitica.legis.com.co/analitica.png" />
+    <meta property="og:description" content="car shopping" />
+
+    @*Google Indexer*@
+
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/css/bootstrap")
+    @Styles.Render("~/css/styles")
+
+    @RenderSection("styles", required: false)
+</head>
+
+<body style="margin:30px;">
+   @Html.Partial("_Header")
+
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            @RenderBody()
+
+        </div>
+    </div>
+   
+   
+
+    
+
+   
+
+    @RenderSection("content", required: false)
+
+    @Scripts.Render("~/js/jquery")
+    @Scripts.Render("~/js/bootstrap")
+    @Scripts.Render("~/js/blueimp.gallery")
+    @Scripts.Render("~/js/chosen")
+    @Scripts.Render("~/js/angular")
+    @Scripts.Render("~/js/bootbox")
+    @Scripts.Render("~/js/bootstrap-tapcollapse")
+    @Scripts.Render("~/js/jtip")
+    @Scripts.Render("~/js/lodash")
+
+  
+
+    @Scripts.Render("~/js/logos")
+    @Scripts.Render("~/js/components")
+    @Scripts.Render("~/js/global")
+
+   
+
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>

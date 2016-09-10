@@ -1,0 +1,348 @@
+@import 'variables';
+.busquedaInicioContainer {
+   max-width: 800px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10px;
+   @media(min-width: 320px) and (max-width: 768px) {
+      margin: 10px 15px;
+   }
+   .form-group {
+      position: relative;
+      i {
+         position: absolute;
+         top: 8px;
+         right: 8px;
+         font-size: 28px;
+         color: $borders;
+         -webkit-transform: rotate(90deg);
+         /* Firefox */
+         -moz-transform: rotate(90deg);
+         /* IE */
+         -ms-transform: rotate(90deg);
+         /* Opera */
+         -o-transform: rotate(90deg);
+         transform: rotate(90deg);
+      }
+      input[placeholder] {
+         text-overflow: ellipsis;
+      }
+      ::-moz-placeholder {
+         text-overflow: ellipsis;
+      }
+      input:-moz-placeholder {
+         text-overflow: ellipsis;
+      }
+      input:-webkit-input-placeholder {
+         text-overflow: ellipsis;
+      }
+      input {
+         height: 45px;
+         font-size: 16px;
+         padding-right: 34px;
+         &[placeholder],
+         &::-moz-placeholder,
+         &:-moz-placeholder,
+         &:-webkit-input-placeholder {
+            overflow: hidden;
+            text-overflow: ellipsis;
+         }
+      }
+   }
+}
+
+.contenidoInicioContainer {
+   margin-top: 53px;
+}
+
+.inicioTabs {
+   //Esta clase se aplica al div que contiene los tabs
+   margin-top: 23px;
+   .nav-tabs {
+      // ul
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      li {
+         -webkit-box-orient: horizontal;
+         -webkit-box-direction: normal;
+         -webkit-flex-direction: row;
+         -ms-flex-direction: row;
+         flex-direction: row;
+         width: 100%;
+         a {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-right: 2px;
+         }
+         &.active {
+            a {
+               border-top: 4px solid $color3;
+               font-size: 18px;
+               font-weight: 500;
+               padding: 3px 15px;
+            }
+         }
+         &:not(.active) {
+            a {
+               background: $disabledBg;
+               color: $disabledFg;
+               font-size: 16px;
+               padding: 6px 15px;
+               border: 1px solid $borders;
+            }
+         }
+         &:last-child {
+            a {
+               margin: 0;
+            }
+         }
+      }
+   }
+   .tab-content {
+      border: 1px solid $borders;
+      border-top: none;
+      padding: 10px 15px;
+      background: #fff;
+   }
+}
+
+.listaLineas {
+   //ul
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   li {
+      border-bottom: 1px solid $borders;
+      padding: 30px 0 5px;
+      &.vencida {
+         .tituloLinea,
+         .detalleLinea {
+            pointer-events: none;
+            color: $disabledFg;
+         }
+      }
+      &:last-of-type {
+         border: none;
+      }
+      .tituloLinea {
+         font-size: 16px;
+         font-weight: 600;
+         .badge {
+            border-radius: 3px;
+            background: $alertFg;
+            padding: 4px 10px 6px;
+            font-weight: 300;
+            margin-left: 10px;
+         }
+      }
+      .renovar {
+         margin-left: 20px;
+      }
+      .detalleLinea {
+         .vence {
+            font-weight: 600;
+            &::before {
+               content: " | ";
+            }
+            .tiempo {
+               font-weight: 300;
+            }
+         }
+      }
+   }
+}
+
+.ofertaLineas {
+   font-size: 14px;
+   margin: 0 -15px -10px;
+   text-align: center;
+   height: 45px;
+   line-height: 45px;
+   background: $color5;
+   border-top: 1px solid $borders;
+   a {
+      display: block;
+   }
+}
+
+.ultimasConsultas {
+   margin-top: 23px;
+   background: #fff;
+   padding: 10px 15px;
+   border: 1px solid $borders;
+   .descripcion {
+      padding-top: 25px;
+   }
+   .grupoConsultas {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+         padding: 5px 10px;
+         .tituloConsulta {
+            margin: 0;
+         }
+         .enlaceConsulta {
+            font-size: 1.4em;
+            &:hover {
+               text-decoration: none;
+               border-bottom: 1px solid;
+            }
+         }
+      }
+   }
+}
+
+.verMasConsultas {
+   text-align: right;
+   border: 1px solid $borders;
+   border-top: 0;
+   background: $color5;
+   font-size: 14px;
+   padding: 0 15px;
+   height: 45px;
+   line-height: 45px;
+}
+
+.tabsColapsables + .panel-group {
+   .panel-heading {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+   }
+   .js-tabcollapse-panel-heading {
+      display: block;
+      padding: 20px;
+      padding-top: 16px;
+      border-top: 4px solid $color3;
+      color: $baseText;
+      font-weight: 500;
+      &:link,
+      &:focus,
+      &:active,
+      &:visited {
+         text-decoration: none;
+      }
+      &.collapsed {
+         border: none;
+         padding-top: 20px;
+         color: $disabledFg;
+         background: $disabledBg;
+         font-weight: 300;
+      }
+   }
+   .ofertaLineas {
+      margin-bottom: -15px;
+   }
+}
+
+.logout {
+   .intro-title {
+      color: $color0;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 40px;
+   }
+}
+
+.tab-pane .flex-inner {
+   display: flex;
+}
+
+.logout {
+   .listaLineas {
+      //max-width: 60%;
+   }
+   .oferta-comercial {
+      padding-left: 30px;
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 450px;
+      div {
+         height: 50%;
+//         min-height: 225px;
+         height: 48%;
+         border-width: 1px;
+         border-style: solid;
+         border-radius: 4px;
+         padding: 20px;
+         h3 {
+            font-weight: 500;
+            margin-top: 0;
+         }
+      }
+   }
+}
+
+.ahorro {
+   font-weight: 600;
+   font-size: 22px;
+   small {
+      font-size: 14px;
+   }
+}
+
+.suscripcion-ano {
+   border-color: $color9;
+   background: $color8;
+   margin-bottom: 15px;
+   * {
+      color: $color0;
+   }
+}
+
+.compra-linea {
+   border-color: $borders;
+   background: #fff;
+}
+
+
+@media(max-width:1024px) {
+   .logout {
+      .contenidoInicioContainer {
+         margin-top: 0;
+      }
+      .flex-inner {
+         flex-direction: column-reverse;
+         > * {
+            max-width: 100%!important;
+            width: 100%;
+            padding: 0;
+         }  
+      }
+      .oferta-comercial {
+         min-height: auto;
+         > div {
+            text-align: center;
+            height: auto;
+            min-height: auto;
+         }
+      }
+   }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

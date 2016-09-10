@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A196D90-6FDB-4367-938D-5B3676E4DA8F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShopingCar</RootNamespace>
+    <AssemblyName>ShopingCar</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Autofac">
+      <HintPath>..\..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Extras.RegistrationAttributes">
+      <HintPath>..\..\packages\Autofac.Extras.RegistrationAttributes.0.0.1\lib\net40\Autofac.Extras.RegistrationAttributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc">
+      <HintPath>..\..\packages\Autofac.Mvc5.3.3.4\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Extensions, Version=1.0.3.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ExtensionsSAH.1.0.32\lib\Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentValidation, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FluentValidation.6.0.0.0\lib\Net45\FluentValidation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentValidation.Mvc, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FluentValidation.MVC5.6.0.0.0\lib\Net45\FluentValidation.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.8.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Prerender.io, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Prerender\Prerender.io.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\PreApplicationStartCode.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\CommonController.cs" />
+    <Compile Include="Controllers\ControllerExtensions.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModelBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\blueimp\Gallery\blueimp-gallery-indicator.css" />
+    <Content Include="Content\blueimp\Gallery\blueimp-gallery-video.css" />
+    <Content Include="Content\blueimp\Gallery\blueimp-gallery.css" />
+    <Content Include="Content\bootstrap-table.css" />
+    <Content Include="Content\bootstrap-table.min.css">
+      <DependentUpon>bootstrap-table.css</DependentUpon>
+    </Content>
+    <Content Include="Content\bootstrap-tour.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css">
+      <DependentUpon>bootstrap.css</DependentUpon>
+    </Content>
+    <Content Include="Content\BubbleGraph.css" />
+    <Content Include="Content\chosen.css" />
+    <Content Include="Content\custom-styles.css">
+      <DependentUpon>custom-styles.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\custom-styles.min.css">
+      <DependentUpon>custom-styles.css</DependentUpon>
+    </Content>
+    <Content Include="App_Browsers\qt.browser" />
+    <Content Include="Content\dropdowns-enhancement.css" />
+    <Content Include="Content\img\error.png" />
+    <Content Include="Content\img\error.svg" />
+    <Content Include="Content\img\loading.gif" />
+    <Content Include="Content\img\play-pause.png" />
+    <Content Include="Content\img\play-pause.svg" />
+    <Content Include="Content\img\refresh.jpg" />
+    <Content Include="Content\img\video-play.png" />
+    <Content Include="Content\img\video-play.svg" />
+    <Content Include="Content\jasny-bootstrap.css" />
+    <Content Include="Content\main.css">
+      <DependentUpon>main.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\main.min.css">
+      <DependentUpon>main.css</DependentUpon>
+    </Content>
+    <Content Include="Content\tabdrop.css" />
+    <Content Include="Content\_basic-styles.scss" />
+    <Content Include="Content\bldUiElements.scss" />
+    <Content Include="App_Data\news_mock.json" />
+    <None Include="bundleconfig.json" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="Content\img\chosen-sprite.png" />
+    <Content Include="Content\img\grafico.png" />
+    <Content Include="Content\img\sliderResource\002_C2733.jpg" />
+    <Content Include="Content\img\sliderResource\003_C2733.jpg" />
+    <Content Include="Content\img\sliderResource\004_C2733.jpg" />
+    <Content Include="Content\img\sliderResource\005_C2733.jpg" />
+    <Content Include="Content\img\sliderResource\006_C2733.jpg" />
+    <Content Include="Content\img\sliderResource\007_C2733.jpg" />
+    <Content Include="Content\img\sliderResource\008_C2733.jpg" />
+    <Content Include="Content\img\sliderResource\009_C2733.jpg" />
+    <Content Include="Content\img\sliderResource\010_C2733.jpg" />
+    <Content Include="Content\img\sliderResource\011_C2733.jpg" />
+    <Content Include="Content\img\user_female.svg" />
+    <Content Include="Content\img\user_male.svg" />
+    <Content Include="Content\personal-icons.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\pantalla.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Prerender\Prerender.io.dll" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Content\custom-styles.scss" />
+    <Content Include="Content\custom-styles.css.map">
+      <DependentUpon>custom-styles.css</DependentUpon>
+    </Content>
+    <Content Include="Scripts\angular-chosen.js" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-sanitize.js" />
+    <Content Include="Scripts\angular-sanitize.min.js" />
+    <Content Include="Scripts\angular-tree-repeat.js" />
+    <Content Include="Scripts\angular-ui\template\datepicker\datepicker.html" />
+    <Content Include="Scripts\angular-ui\template\datepicker\day.html" />
+    <Content Include="Scripts\angular-ui\template\datepicker\month.html" />
+    <Content Include="Scripts\angular-ui\template\datepicker\popup.html" />
+    <Content Include="Scripts\angular-ui\template\datepicker\year.html" />
+    <Content Include="Scripts\angular-ui\template\pagination\pagination.html" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap-custom-1.1.2.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\blueimp\Gallery\blueimp-gallery-fullscreen.js" />
+    <Content Include="Scripts\blueimp\Gallery\blueimp-gallery-indicator.js" />
+    <Content Include="Scripts\blueimp\Gallery\blueimp-gallery-video.js" />
+    <Content Include="Scripts\blueimp\Gallery\blueimp-gallery-vimeo.js" />
+    <Content Include="Scripts\blueimp\Gallery\blueimp-gallery-youtube.js" />
+    <Content Include="Scripts\blueimp\Gallery\blueimp-gallery.js" />
+    <Content Include="Scripts\blueimp\Gallery\jquery.blueimp-gallery.js" />
+    <Content Include="Scripts\bootstrap-tabdrop.js" />
+    <Content Include="Scripts\bootstrap-table-es-ES.js" />
+    <Content Include="Scripts\bootstrap-table-es-ES.min.js">
+      <DependentUpon>bootstrap-table-es-ES.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\bootstrap-table.min.js">
+      <DependentUpon>bootstrap-table.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Scripts\angular-sanitize.min.js.map" />
+    <Content Include="fonts\pantalla.eot" />
+    <Content Include="fonts\pantalla.ttf" />
+    <Content Include="fonts\pantalla.woff" />
+    <Content Include="Scripts\bootstrap-table-es-ES.min.js.map">
+      <DependentUpon>bootstrap-table-es-ES.min.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\bootstrap-table.min.js.map">
+      <DependentUpon>bootstrap-table.min.js</DependentUpon>
+    </Content>
+    <Content Include="Content\fontawesome\_animated.scss" />
+    <Content Include="Content\fontawesome\_bordered-pulled.scss" />
+    <Content Include="Content\fontawesome\_core.scss" />
+    <Content Include="Content\fontawesome\_fixed-width.scss" />
+    <Content Include="Content\fontawesome\_font-awesome.scss" />
+    <Content Include="Content\fontawesome\_icons.scss" />
+    <Content Include="Content\fontawesome\_larger.scss" />
+    <Content Include="Content\fontawesome\_list.scss" />
+    <Content Include="Content\fontawesome\_mixins.scss" />
+    <Content Include="Content\fontawesome\_path.scss" />
+    <Content Include="Content\fontawesome\_rotated-flipped.scss" />
+    <Content Include="Content\fontawesome\_stacked.scss" />
+    <Content Include="Content\fontawesome\_variables.scss" />
+    <Content Include="Content\main.scss" />
+    <Content Include="Content\_globalStyles.scss" />
+    <Content Include="Content\_inicio.scss" />
+    <Content Include="Content\_login.scss" />
+    <Content Include="Content\_navBar.scss" />
+    <Content Include="Content\_variables.scss" />
+    <Content Include="Content\main.css.map">
+      <DependentUpon>main.css</DependentUpon>
+    </Content>
+    <Content Include="Content\_jquery.custom-scrollbar.scss" />
+    <Content Include="Content\fontawesome\_screen-reader.scss" />
+    <None Include="Properties\PublishProfiles\Release Publish.pubxml" />
+    <Content Include="Scripts\bootstrap.min.js.map">
+      <DependentUpon>bootstrap.min.js</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\angular.utilities.js" />
+    <Content Include="Scripts\bootstrap-table.js" />
+    <Content Include="Scripts\bootbox.js" />
+    <Content Include="Scripts\bootstrap-tabcollapse.js" />
+    <Content Include="Scripts\bootstrap-tour.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js">
+      <DependentUpon>bootstrap.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\bootstrap3-typeahead.js" />
+    <Content Include="Scripts\chosen.js" />
+    <Content Include="Scripts\dropdowns-enhancement.js" />
+    <Content Include="Scripts\jasny-bootstrap.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\jquery.autocomplete.js" />
+    <Content Include="Scripts\jquery.blast.js" />
+    <Content Include="Scripts\jquery.maphilight.js" />
+    <Content Include="Scripts\jquery.waypoints.js" />
+    <Content Include="Scripts\jTip.js" />
+    <Content Include="Scripts\jTip.min.js">
+      <DependentUpon>jTip.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\lodash.js" />
+    <Content Include="Scripts\misc\AnalisisJuridico\GraficoBurbuja\main.js" />
+    <Content Include="Scripts\misc\AnalisisJuridico\Index\Directives\agregarFavoritosDirective.js" />
+    <Content Include="Scripts\misc\AnalisisJuridico\Index\main.js" />
+    <Content Include="Scripts\misc\AnalisisJuridico\Linea\Controllers\lineasController.js" />
+    <Content Include="Scripts\angular-locale_es-co.js" />
+    <Content Include="Scripts\misc\Autocompletar\Autocompletar.js" />
+    <Content Include="Scripts\misc\Busquedas\Controllers\busquedasController.js" />
+    <Content Include="Scripts\misc\Favoritos\Alerts.js" />
+    <Content Include="Scripts\misc\Favoritos\Controllers\FavoritosController.js" />
+    <Content Include="Scripts\misc\LineaJurisprudencial\Grafico\main.js" />
+    <Content Include="Scripts\misc\LoginIp\LoginIp.js" />
+    <Content Include="Scripts\misc\Notificaciones\Alerts.js" />
+    <Content Include="Scripts\misc\Notificaciones\Controllers\notificacionesController.js" />
+    <Content Include="Scripts\misc\Notificaciones\Controllers\notificacionesMiniController.js" />
+    <Content Include="Scripts\misc\Notificaciones\Factories\notificacionesFactory.js" />
+    <Content Include="Scripts\misc\Perfil\Controllers\comprasController.js" />
+    <Content Include="Scripts\misc\Perfil\Controllers\notificacionesController.js" />
+    <Content Include="Scripts\misc\Perfil\Controllers\perfilController.js" />
+    <Content Include="Scripts\misc\Perfil\Factories\perfilFactory.js" />
+    <Content Include="Scripts\misc\Sentencia\barra-documento.js" />
+    <Content Include="Scripts\misc\Sentencia\resaltados-init.js" />
+    <Content Include="Scripts\misc\Home\Contactenos\main.js" />
+    <Content Include="Scripts\misc\Home\Index\Directives\analisisConsultadosDirective.js" />
+    <Content Include="Scripts\misc\Sentencia\SearchInDocument.js" />
+    <Content Include="Scripts\misc\Shared\Factories\analisisConsultadosFactory.js" />
+    <Content Include="Scripts\misc\Shared\app.js" />
+    <Content Include="Scripts\misc\Shared\Factories\busquedasFactory.js" />
+    <Content Include="Scripts\misc\Shared\Factories\favoritosFactory.js" />
+    <Content Include="Scripts\misc\Shared\global.js" />
+    <Content Include="Scripts\misc\Sentencia\LegisResaltado.js" />
+    <Content Include="Scripts\misc\Statistics\Estadisticas.js" />
+    <Content Include="Scripts\misc\Statistics\Eventos.js" />
+    <Content Include="Scripts\spin.js" />
+    <Content Include="Scripts\sticky.js" />
+    <Content Include="Scripts\utils.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Picture.cshtml" />
+    <Content Include="Scripts\jquery-2.1.4.min.map" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Scripts\jTip.min.js.map">
+      <DependentUpon>jTip.min.js</DependentUpon>
+    </Content>
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_ListNews.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="Content\resources\" />
+    <Folder Include="Validators\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\PJ.Core\JFP.Core.csproj">
+      <Project>{c40bf5c8-7f9d-4b85-b45c-b7cc3ac9d602}</Project>
+      <Name>JFP.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\PJ.Services\JFP.Services.csproj">
+      <Project>{5f94a75e-4399-4309-8cf6-65e68e6d4f84}</Project>
+      <Name>JFP.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PJ.WEB.Framework\JFP.WEB.Framework.csproj">
+      <Project>{dd96fc2c-d5fc-43f7-ab1b-859398dbbbc7}</Project>
+      <Name>JFP.WEB.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58234</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58234/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

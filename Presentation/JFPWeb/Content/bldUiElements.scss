@@ -1,0 +1,70 @@
+@import 'variables';
+//Estilos que aplican sólo parala hoja de elementos UI
+[class*="color"]{
+    line-height: 2;
+    margin: 1em auto;
+    text-align: center;
+    box-shadow: 0 0 3px #ccc;
+    
+    &:hover{
+        box-shadow: 0 0 6px 2px #999;
+    }
+}
+
+section{
+    margin: 2em 0;
+    padding: 1em 0;
+    border-top: 2px solid $color2;
+}
+
+.color0{
+    background: $color0;
+    color:$color6;
+}
+.color1{
+    background: $color1;
+}
+.color2{
+    background: $color2;
+}
+.color3{
+    background: $color3;
+}
+.color4{
+    background: $color4;
+}
+.color5{
+    background: $color5;
+}
+.color6{
+    background: $color6;
+}
+.color7{
+    background: $color7;
+}
+
+.disabledBg{
+    background: $disabledBg;
+}
+.disabledColor{
+    background: $disabledFg;
+}
+.controlBorder{
+    background: $borders;
+}
+.activeBg{
+    background: $activeBg;
+}
+.accentBg{
+    background: $accentBg;
+}
+.accentFg{
+    background: $accentFg;
+}
+.linksFg{
+    background: $linksFg;
+}
+.alertFg{
+    background: $alertFg;
+    color: $activeBg;
+}

@@ -1,0 +1,23 @@
+﻿[
+    {
+        "outputFile": "Content/custom-styles.css",
+        "inputFile": "Content/custom-styles.scss",
+        "options": {
+            "sourceMap": true
+        }
+    },
+    {
+        "outputFile": "Content/main.css",
+        "inputFile": "Content/main.scss",
+        "options": {
+            "sourceMap": true
+        }
+    },
+    {
+        "outputFile": "Content/lineaJurisprudencialGraph.css",
+        "inputFile": "Content/lineaJurisprudencialGraph.scss",
+        "options": {
+            "sourceMap": true
+        }
+    }
+]

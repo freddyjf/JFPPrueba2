@@ -1,0 +1,1 @@
+2016-02-16 13:35:11,964 [7] ERROR Precedente - user: (null) -token: (null)  -Error 404 registrado recurso '/LoginIP/NuevoUsuario': No se encuentra el controlador de la ruta de acceso '/LoginIP/NuevoUsuario' o no implementa IController.

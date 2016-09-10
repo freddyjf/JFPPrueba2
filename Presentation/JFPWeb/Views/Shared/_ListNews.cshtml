@@ -1,0 +1,41 @@
+﻿@using JFP.Core.Domain.Catalogo
+@model List<Catalogo>
+
+
+@foreach (Catalogo m in Model)
+{
+    <div class="row">
+
+
+        <div class="alert alert-success newsRow" role="alert" onclick="ShowNews(@m.id)">@m.title</div>
+
+        <div id="news_@m.id" class="col-sm-12 col-md-12" style="display:none">
+            <div class="row">
+
+                <div class="col-md-4">
+
+                    <a href="#" class="thumbnail">
+                        <img src="@m.image" alt="@m.title">
+                    </a>
+
+
+                </div>
+                <div class="col-md-8">
+
+                    <h3>@m.title.ToLower()</h3>
+                    <p>
+                        @m.content.ToLowerInvariant()
+                    </p>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+}

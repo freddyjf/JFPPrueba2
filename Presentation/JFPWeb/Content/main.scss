@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'fontawesome/font-awesome';
+@import 'globalStyles';
+@import 'navBar';
+@import 'inicio';
+@import 'ficha';
+@import 'resultados';
+@import 'notificaciones';
+@import 'cuenta';
+@import 'favoritos';
+@import 'login';
+@include scrollbars(4px, $color0, $color5); 
+
