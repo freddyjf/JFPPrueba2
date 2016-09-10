@@ -1,1 +1,0 @@
-2016-02-16 08:10:11,392 [6] ERROR Precedente - user: (null) -token: (null)  -Error 404 registrado recurso '/Notificaciones/GetAnalisis': No se encuentra un método de acción público 'GetAnalisis' en el controlador 'Precedente.Controllers.NotificacionesController'.

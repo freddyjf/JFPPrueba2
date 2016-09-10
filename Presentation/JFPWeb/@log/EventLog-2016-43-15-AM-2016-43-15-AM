@@ -1,7 +1,0 @@
-2016-02-15 11:43:52,068 [7] ERROR Precedente - user: NOT AVAILABLE -token: NOT AVAILABLE  -RegistroLogos
-System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
-   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR, String Configuracion)
-   en LEGIS.UID.LOGOS.Registro.Iniciar(String URLWebService, String APP, String SERVIDOR)
-   en LEGIS.UID.LOGOS.Registro..ctor(String URLWebService, String APP, String SERVIDOR)
-   en LEGIS.PJ.Core.Statistics.StatisticsManager.get_Registro() en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 257
-   en LEGIS.PJ.Core.Statistics.StatisticsManager.RegistroLogos(EstadisticasUsos uso, Hashtable& campos) en d:\Proyectos\Ulises\2799-PrecedenteJurisprudencial\Fuentes\Libraries\PJ.Core\Statistics\StatisticsManager.cs:línea 117
